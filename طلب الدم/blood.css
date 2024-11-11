@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    direction: rtl;
+}
+
+.section-blood{
+  margin-top: 100px;
+  color: red;
+  padding: 10px;
+}
+.section-blood .p2{
+  color: black;
+  font-weight:  bold;
+}
+.method {
+    margin-bottom: 20px; /* مسافة أسفل كل طريقة اتصال */
+  margin-right: 20px;
+}
+
+.method a {
+    text-decoration: none; /* إزالة التسطير */
+    color: #333; /* لون النص */
+}
+
+.method a:hover {
+    color: #b22222; /* تغيير اللون عند التمرير */
+}
+
+.method ul {
+    list-style-type: none; /* إزالة علامات القائمة */
+    padding: 0; /* إزالة الحشوة */
+}
+
+.method li {
+    margin: 5px 0; /* مسافة بين عناصر القائمة */
+}
+
+.social-icons {
+    display: flex; /* استخدام الفليكس لتوزيع الأزرار */
+    justify-content: center; /* محاذاة إلى الوسط */
+    margin-top: 20px; /* مسافة أعلى الأيقونات */
+}
+
+.social-button {
+    background-color: #b22222; /* لون أحمر داكن */
+    color: white; /* لون النص أبيض */
+    padding: 10px 20px; /* حشوة الأزرار */
+    border-radius: 5px; /* زوايا دائرية للأزرار */
+    margin: 0 10px; /* مسافة بين الأزرار */
+    text-decoration: none; /* إزالة التسطير */
+    transition: background-color 0.3s; /* تأثير انتقال لون الخلفية */
+    display: flex; /* لضبط الأيقونات والنص في نفس الخط */
+    align-items: center; /* محاذاة عمودية للمحتوى */
+}
+
+.social-button i {
+    margin-left: 5px; /* مسافة بين الأيقونة والنص */
+}
+
+.social-button:hover {
+    background-color: #8b0000; /* لون أحمر أغمق عند التمرير */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #b71c1c; /* لون متناسق مع الهوية البصرية للموقع */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.address-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* الفراغ بين حقول العنوان */
+}
+
+.address-container input {
+    flex: 1; /* يجعل الحقول تمتد بالتساوي */
+    min-width: 120px; /* الحد الأدنى لعرض الحقول */
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b71c1c; /* لون زر متناسق مع الهوية البصرية للموقع */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #a00000; /* لون أغمق عند التحويم */
+}

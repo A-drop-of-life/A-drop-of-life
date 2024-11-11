@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - قطرة حياة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="social.css"> <!-- رابط إلى ملف CSS -->
+  <link rel="stylesheet" href="nav.css"> <!-- رابط إلى ملف CSS -->
+  
+  
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button> <!-- زر التنقل للشاشات الصغيرة -->
+        <div id="nav-buttons">
+            <button onclick="location.href='../index.html'">الرئيسية</button>
+            <button onclick="location.href='../اهمية التبرع/Importance.html'">أهمية التبرع بالدم</button>
+            <button onclick="location.href='../حول/about.html'">من نحن</button>
+            <button onclick="location.href='../تسجيل المتبرعين/sings.html'">التسجيل</button>
+            <button onclick="location.href='../طلب الدم/blood.html'">طلب الدم</button>
+        </div>
+    </nav>
+</header>
+  
+    <div class="contact-container">
+        <h1>اتصل بنا</h1>
+        <p>إذا كان لديك أي استفسارات، لا تتردد في الاتصال بنا عبر وسائل التواصل التالية:</p>
+        
+        <div class="contact-methods">
+            <div class="method">
+                <h2><i class="far fa-envelope"></i> البريد الإلكتروني:</h2>
+                <p><a href="mailto:zakari712909@gmail.com">zakari712909@gmail.com</a></p>
+            </div>
+            
+            <div class="method">
+                <h2><i class="fas fa-phone-alt"></i> الهاتف:</h2>
+                <ul>
+                    <li><a href="tel:735525295">735525295</a></li>
+                    <li><a href="tel:737196177">737196177</a></li>
+                    <li><a href="tel:771293579">771293579</a></li>
+                    <li><a href="tel:712909843">712909843</a></li>
+                </ul>
+            </div>
+            
+            <div class="method">
+                <h2><i class="fab fa-whatsapp"></i> واتساب:</h2>
+                <p><a href="https://wa.me/735525295">735525295</a></p>
+            </div>
+            
+            <div class="method">
+                <h2><i class="fab fa-facebook"></i> فيسبوك:</h2>
+                <p><a href="https://www.facebook.com/profile.php?id=100094199130730&mibextid=ZbWKwL" target="_blank">صفحتنا على فيسبوك</a></p>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://wa.me/735525295" class="social-button whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100094199130730&mibextid=ZbWKwL" class="social-button facebook" target="_blank">
+                <i class="fab fa-facebook"></i> فيسبوك
+            </a>
+        </div>
+    </div>
+  <script>
+  function toggleMenu() {
+    const navButtons = document.getElementById("nav-buttons");
+    navButtons.classList.toggle("active");
+}
+    </script>
+</body>
+</html>

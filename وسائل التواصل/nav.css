@@ -1,0 +1,84 @@
+/* إعدادات الناف بار العامة */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+#nav-buttons {
+    display: flex;
+    gap: 15px; /* مسافة بين الأزرار */
+}
+
+/* تنسيق الأزرار */
+#nav-buttons button {
+    background-color: #e63946; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* تأثير عند التمرير على الأزرار */
+#nav-buttons button:hover {
+    background-color: #d62828; /* لون مختلف عند التمرير */
+    transform: scale(1.05); /* تكبير بسيط عند التمرير */
+}
+
+/* زر التنقل للشاشات الصغيرة */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #e63946; /* لون الزر */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* إظهار زر التنقل في الشاشات الصغيرة فقط */
+@media (max-width: 768px) {
+    #nav-buttons {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #f2f2f2;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar {
+        position: relative;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    /* عند تفعيل القائمة */
+    #nav-buttons.active {
+        display: flex;
+    }
+
+    /* تنسيق الأزرار في القائمة المنسدلة */
+    #nav-buttons.active button {
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
+}
+
+/* تنسيق النصوص بشكل متناسق */
+#nav-buttons button,
+#menu-toggle {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}

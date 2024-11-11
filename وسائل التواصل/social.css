@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    background-color: #f9f9f9; /* لون خلفية فاتح */
+    direction: rtl; /* اتجاه النص */
+    padding: 20px; /* حشوة الصفحة */
+    margin: 0; /* إزالة الهوامش */
+}
+
+.contact-container {
+    max-width: 800px; /* أقصى عرض للعنصر */
+    margin: auto; /* محاذاة إلى الوسط */
+    padding: 20px; /* حشوة داخلية */
+    background-color: #ffffff; /* لون خلفية أبيض */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل العنصر */
+}
+
+h1 {
+    color: #b22222; /* لون أحمر داكن */
+    text-align: center; /* محاذاة إلى الوسط */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+}
+
+h2 {
+    color: #b22222; /* لون أحمر داكن */
+    margin-bottom: 10px; /* مسافة أسفل العناوين */
+}
+
+.contact-methods {
+    margin-top: 20px; /* مسافة أعلى قسم طرق الاتصال */
+}
+
+.method {
+    margin-bottom: 20px; /* مسافة أسفل كل طريقة اتصال */
+}
+
+.method a {
+    text-decoration: none; /* إزالة التسطير */
+    color: #333; /* لون النص */
+}
+
+.method a:hover {
+    color: #b22222; /* تغيير اللون عند التمرير */
+}
+
+.method ul {
+    list-style-type: none; /* إزالة علامات القائمة */
+    padding: 0; /* إزالة الحشوة */
+}
+
+.method li {
+    margin: 5px 0; /* مسافة بين عناصر القائمة */
+}
+
+.social-icons {
+    display: flex; /* استخدام الفليكس لتوزيع الأزرار */
+    justify-content: center; /* محاذاة إلى الوسط */
+    margin-top: 20px; /* مسافة أعلى الأيقونات */
+}
+
+.social-button {
+    background-color: #b22222; /* لون أحمر داكن */
+    color: white; /* لون النص أبيض */
+    padding: 10px 20px; /* حشوة الأزرار */
+    border-radius: 5px; /* زوايا دائرية للأزرار */
+    margin: 0 10px; /* مسافة بين الأزرار */
+    text-decoration: none; /* إزالة التسطير */
+    transition: background-color 0.3s; /* تأثير انتقال لون الخلفية */
+    display: flex; /* لضبط الأيقونات والنص في نفس الخط */
+    align-items: center; /* محاذاة عمودية للمحتوى */
+}
+
+.social-button i {
+    margin-left: 5px; /* مسافة بين الأيقونة والنص */
+}
+
+.social-button:hover {
+    background-color: #8b0000; /* لون أحمر أغمق عند التمرير */
+}
