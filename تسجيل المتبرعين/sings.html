@@ -10,43 +10,24 @@
 </head>
 <body>
 <header>
-        <nav id="nav">
-          <center> <pre>قطرةحياة</pre></center>    
-            <div id="d1" dir="rtl">
-                <button onclick="location.href='../index.html'">الرئيسية</button>
-                <button onclick="location.href='../اهمية التبرع/Importance.html'">أهمية التبرع بالدم</button>
-                <button onclick="location.href='../حول/about.html'">من نحن</button>
-                <button onclick="location.href='../تسجيل المتبرعين/sings.html'">التسجيل</button>
-               <button onclick="location.href='../طلب الدم/blood.html'">طلب الدم</button>
-                
-            </div>
-            <img src="../images/logo/01.jpg" width="80" height="50" dir="ltr" id="logo">
-            <img src="../images/logo/7.png" id="icon">
-        </nav>
-        <center>
-            <div id="cont">
-                <img src="../images/logo/01.jpg" id="logo2">
-            </div>
-        </center>
-
-        <nav id="navbar">
-            <ul>
-                <li><a href="../index.html">الرئيسية</a></li>
-                <li><a href="../اهمية التبرع/Importance.html">أهمية التبرع بالدم</a></li>
-                <li><a href="../حول/about.html">من نحن</a></li>
-                <li><a href="../تسجيل المتبرعين/sings.html">التسجيل والتطوع</a></li>
-                <li><a href="../طلب الدم/blood.html">طلب الدم</a></li>
-            </ul>
-        </nav>
+    <nav id="nav">
+        <center> <pre>قطرةحياة</pre></center>
+        <div id="d1" dir="rtl">
+            <button onclick="location.href='../index.html'">الرئيسية</button>
+            <button onclick="location.href='../اهمية التبرع/Importance.html'">أهمية التبرع بالدم</button>
+            <button onclick="location.href='../حول/about.html'">من نحن</button>
+            <button onclick="location.href='../تسجيل المتبرعين/sings.html'">التسجيل</button>
+            <button onclick="location.href='../طلب الدم/blood.html'">طلب الدم</button>
+        </div>
+        <img src="../images/logo/01.jpg" width="80" height="50" dir="ltr" id="logo">
+        <img src="../images/logo/7.png" id="icon">
+    </nav>
 </header>
 
 <main>
-  <section class="sing">
-            <h2>التسجيل في المبادرة</h2>
-            <p>كن سبباً في إنقاذ روح إنسان بادر وكن احد جنود الحياة، التي تبعث السعادة وتنشر السلام وتبذل الخير للآخرين، دون مقابل ، امتثالا لقوله عز وجل ((وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا)).</p>
-            <br>
-            <p class="p">قم  بتسجيل بياناتك هنا وسيتم الاتصال بك وقت الحاجة إليك من أجل التبرع لأحد المرضى
-            والمحتاجين للدم .</p> 
+    <section class="sing">
+        <h2>التسجيل في المبادرة</h2>
+        <p>كن سبباً في إنقاذ روح إنسان بادر وكن احد جنود الحياة...</p>
     </section>
 
     <div class="container">
@@ -67,10 +48,9 @@
                 
                 <label for="phone">رقم الهاتف:</label>
                 <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم هاتفك">
-
-                 <label for="phone">رقم الواتساب:</label>
-                <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم الواتساب">
-
+                
+                <label for="whatsapp">رقم الواتساب:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="أدخل رقم الواتساب">
             </fieldset>
 
             <fieldset>
@@ -99,14 +79,14 @@
                 <label for="city">المحافظة:</label>
                 <input type="text" id="city" name="city" required placeholder="أدخل محافظتك">
                 
-                <label for="address">المديرية:</label>
-                <input type="text" id="address" name="address" required placeholder="أدخل مديريتك">
+                <label for="district">المديرية:</label>
+                <input type="text" id="district" name="district" required placeholder="أدخل مديريتك">
               
-                <label for="city">العزلة:</label>
-                <input type="text" id="city" name="city" required placeholder="أدخل عزلتك">
+                <label for="isolation">العزلة:</label>
+                <input type="text" id="isolation" name="isolation" required placeholder="أدخل عزلتك">
                 
-                <label for="address">القرية:</label>
-                <input type="text" id="address" name="address" required placeholder="أدخل قريتك">
+                <label for="village">القرية:</label>
+                <input type="text" id="village" name="village" required placeholder="أدخل قريتك">
             </fieldset>
 
             <fieldset>
@@ -129,6 +109,7 @@ document.querySelector('#donorForm').addEventListener('submit', function(event) 
     event.preventDefault(); // منع إرسال النموذج
 
     var phone = document.getElementById('phone').value;
+    var whatsapp = document.getElementById('whatsapp').value;
     var terms = document.getElementById('terms').checked;
 
     if (phone.length < 9) {
@@ -145,18 +126,19 @@ document.querySelector('#donorForm').addEventListener('submit', function(event) 
     var name = encodeURIComponent(document.getElementById('name').value);
     var dob = encodeURIComponent(document.getElementById('dob').value);
     var genderValue = document.getElementById('gender').value;
-    var phone = encodeURIComponent(document.getElementById('phone').value);
     var bloodType = encodeURIComponent(document.getElementById('blood-type').value);
     var chronicDiseases = encodeURIComponent(document.getElementById('chronic-diseases').value);
     var currentMedications = encodeURIComponent(document.getElementById('current-medications').value);
     var city = encodeURIComponent(document.getElementById('city').value);
-    var address = encodeURIComponent(document.getElementById('address').value);
+    var district = encodeURIComponent(document.getElementById('district').value);
+    var isolation = encodeURIComponent(document.getElementById('isolation').value);
+    var village = encodeURIComponent(document.getElementById('village').value);
 
     // تحويل قيمة الجنس إلى النص العربي
     var gender = (genderValue === 'male') ? 'ذكر' : 'أنثى';
 
     // تكوين الرسالة
-    var message = `الإسم: ${name}%0Aتاريخ الميلاد: ${dob}%0Aالجنس: ${gender}%0Aرقم الهاتف: ${phone}%0Aالبريد الإلكتروني: ${email}%0Aنوع الدم: ${bloodType}%0Aالأمراض المزمنة: ${chronicDiseases}%0Aالأدوية الحالية: ${currentMedications}%0Aالمدينة: ${city}%0Aالعنوان: ${address}`;
+    var message = `الإسم: ${name}%0Aتاريخ الميلاد: ${dob}%0Aالجنس: ${gender}%0Aرقم الهاتف: ${phone}%0Aرقم الواتساب: ${whatsapp}%0Aنوع الدم: ${bloodType}%0Aالأمراض المزمنة: ${chronicDiseases}%0Aالأدوية الحالية: ${currentMedications}%0Aالمحافظة: ${city}%0Aالمديرية: ${district}%0Aالعزلة: ${isolation}%0Aالقرية: ${village}`;
 
     // تكوين رابط WhatsApp مع رمز البلد
     var whatsappUrl = `https://api.whatsapp.com/send?phone=967735525295&text=${message}`;
