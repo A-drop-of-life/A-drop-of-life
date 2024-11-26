@@ -140,7 +140,7 @@ document.querySelector('#donorForm').addEventListener('submit', function(event) 
     // تكوين الرسالة
     var message = `الإسم: ${name}%0Aتاريخ الميلاد: ${dob}%0Aالجنس: ${gender}%0Aرقم الهاتف: ${phone}%0Aرقم الواتساب: ${whatsapp}%0Aنوع الدم: ${bloodType}%0Aالأمراض المزمنة: ${chronicDiseases}%0Aالأدوية الحالية: ${currentMedications}%0Aالمحافظة: ${city}%0Aالمديرية: ${district}%0Aالعزلة: ${isolation}%0Aالقرية: ${village}`;
 
-    // تكوين رابط WhatsApp مع رمز البلد
+    // تكوين رابط WhatsApp مع رقم البلد
     var whatsappUrl = `https://api.whatsapp.com/send?phone=967735525295&text=${message}`;
 
     // فتح رابط WhatsApp
