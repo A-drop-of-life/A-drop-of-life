@@ -128,7 +128,6 @@
 document.querySelector('#donorForm').addEventListener('submit', function(event) {
     event.preventDefault(); // منع إرسال النموذج
 
-    var email = document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
     var terms = document.getElementById('terms').checked;
 
@@ -147,7 +146,6 @@ document.querySelector('#donorForm').addEventListener('submit', function(event) 
     var dob = encodeURIComponent(document.getElementById('dob').value);
     var genderValue = document.getElementById('gender').value;
     var phone = encodeURIComponent(document.getElementById('phone').value);
-    var email = encodeURIComponent(document.getElementById('email').value);
     var bloodType = encodeURIComponent(document.getElementById('blood-type').value);
     var chronicDiseases = encodeURIComponent(document.getElementById('chronic-diseases').value);
     var currentMedications = encodeURIComponent(document.getElementById('current-medications').value);
